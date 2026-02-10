@@ -1,0 +1,29 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "A full-stack MERN Expense Tracker Application",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "expense-tracker",
+    "mern",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.4"
+  }
+}
